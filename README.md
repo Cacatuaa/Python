@@ -1,2 +1,2 @@
 # Python
-Repository to send studies projects
+Repository to put studies projects
