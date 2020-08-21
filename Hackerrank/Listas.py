@@ -9,6 +9,7 @@ sort: Sort the list.
 pop: Pop the last element from the list.
 reverse: Reverse the list.
 Initialize your list and read in the value of  followed by  lines of commands where each command will be of the  types listed above. Iterate through each command in order and perform the corresponding operation on your list.
+teste
 """
 def list_insert(lista, index, number):
     lista.insert(index, number)
