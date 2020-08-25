@@ -25,20 +25,12 @@ def Determinante(x, y, z):
     return det
 
 def CramerX(x, y, z):
-    xmatx = []
-    xmaty = []
-    xmatz = []
-    xmatx.append(x[3])
-    xmatx.append(x[1])
-    xmatx.append(x[2])
-
-    xmaty.append(y[3])
-    xmaty.append(y[1])
-    xmaty.append(y[2])
-
-    xmatz.append(z[3])
-    xmatz.append(z[1])
-    xmatz.append(z[2])
+    xmatx = x.copy()
+    xmaty = y.copy()
+    xmatz = z.copy()
+    xmatx[0] = x[3]
+    xmaty[0] = y[3]
+    xmatz[0] = z[3]
     """print("coluna X")
     print(xmatx)
     print(xmaty)
@@ -48,20 +40,12 @@ def CramerX(x, y, z):
     return detx
 
 def CramerY(x, y, z):
-    ymatx = []
-    ymaty = []
-    ymatz = []
-    ymatx.append(x[0])
-    ymatx.append(x[3])
-    ymatx.append(x[2])
-
-    ymaty.append(y[0])
-    ymaty.append(y[3])
-    ymaty.append(y[2])
-
-    ymatz.append(z[0])
-    ymatz.append(z[3])
-    ymatz.append(z[2])
+    ymatx = x.copy()
+    ymaty = y.copy()
+    ymatz = z.copy()
+    ymatx[1] = x[3]
+    ymaty[1] = y[3]
+    ymatz[1] = z[3]
     """print("coluna Y")
     print(ymatx)
     print(ymaty)
@@ -71,20 +55,12 @@ def CramerY(x, y, z):
     return dety
 
 def CramerZ(x, y, z):
-    zmatx = []
-    zmaty = []
-    zmatz = []
-    zmatx.append(x[0])
-    zmatx.append(x[1])
-    zmatx.append(x[3])
-
-    zmaty.append(y[0])
-    zmaty.append(y[1])
-    zmaty.append(y[3])
-
-    zmatz.append(z[0])
-    zmatz.append(z[1])
-    zmatz.append(z[3])
+    zmatx = x.copy()
+    zmaty = y.copy()
+    zmatz = z.copy()
+    zmatx[2] = x[3]
+    zmaty[2] = y[3]
+    zmatz[2] = z[3]
 
     """print("coluna Z")
     print(zmatx)
