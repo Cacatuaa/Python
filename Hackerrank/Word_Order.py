@@ -2,22 +2,16 @@ from collections import Counter
 
 def main():
     n = int(input(""))
-    words = []
+    c = Counter()
     for i in range(0, n):
-        words.append(input(""))
-    distinct = set(words)
-    print(len(distinct))
+        c[input("")] += 1
 
-    total = []
-    counter = 0
-    for i in distinct:
-        for j in words:
-            if i == j:
-                counter += 1
-        total.append(str(counter))
-        counter = 0    
-    total.sort(reverse=True)
-    print(" ".join(total))
+    print(len(set(c)))
+    number = []
+    for word in c:
+        number.append(str(c[word]))
+
+    print(" ".join(number))
 
 if __name__ == "__main__":
     main()
