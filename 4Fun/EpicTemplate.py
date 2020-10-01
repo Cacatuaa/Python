@@ -9,7 +9,6 @@ def main():
         print("@LOOTS")
         print(link)
         print("="*25)
-
     elif qtd == 2:
         nome = input("Digite o nome do primeiro jogo: ")
         link = input("Digite o link do primeiro jogo: ")
@@ -22,6 +21,5 @@ def main():
         print(link)
         print(link2)
         print("="*25)
-
 if __name__ == "__main__":
     main()
